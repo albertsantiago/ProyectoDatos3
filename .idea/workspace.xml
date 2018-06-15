@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="520989ce-d418-431c-97a9-8b3ee0a5bc6e" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/bin/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Demoredis.class" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bin/edu/pucmm/Demoredis.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#2220#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>\/\/\n\/\/ Source code recreated from a \.class file by IntelliJ IDEA\n\/\/ \(powered by Fernflower decompiler\)\n\/\/\n\npackage edu\.pucmm\;\n\nimport java\.math\.BigDecimal\;\nimport java\.util\.Iterator\;\nimport java\.util\.function\.Predicate\;\nimport org\.redisson\.Redisson\;\nimport org\.redisson\.api\.RList\;\nimport org\.redisson\.api\.RedissonClient\;\nimport org\.redisson\.config\.Config\;\n\npublic class Demoredis \{\n    public Demoredis\(\) \{\n    \}\n\n    public static void main\(String\[\] args\) \{\n        Config config \= new Config\(\)\;\n        config\.useSingleServer\(\)\.setAddress\(\&quot;redis\:\/\/localhost\:6379\&quot;\)\;\n        RedissonClient redisson \= Redisson\.create\(config\)\;\n        RList\&lt;Demoredis\.Demo\&gt; demos \= redisson\.getList\(\&quot;data\&quot;\)\;\n        if \(demos\.isEmpty\(\)\) \{\n            demos\.add\(new Demoredis\.Demo\(\&quot;Hola\&quot;\, new BigDecimal\(500\)\)\)\;\n            demos\.add\(new Demoredis\.Demo\(\&quot;Hola2\&quot;\, new BigDecimal\(500\)\)\)\;\n            demos\.add\(new Demoredis\.Demo\(\&quot;Hola3\&quot;\, new BigDecimal\(500\)\)\)\;\n            demos\.add\(new Demoredis\.Demo\(\&quot;klk\&quot;\, new BigDecimal\(50\)\)\)\;\n            demos\.add\(new Demoredis\.Demo\(\&quot;klk2\&quot;\, new BigDecimal\(50\)\)\)\;\n        \}\n\n        demos\.removeIf\(new Predicate\&lt;Demoredis\.Demo\&gt;\(\) \{\n            public boolean test\(Demoredis\.Demo demo\) \{\n                return demo\.getName\(\)\.equals\(\&quot;klk\&quot;\)\;\n            \}\n        \}\)\;\n        Iterator var5 \= demos\.iterator\(\)\;\n\n        while\(var5\.hasNext\(\)\) \{\n            Demoredis\.Demo demo \= \(Demoredis\.Demo\)var5\.next\(\)\;\n            System\.out\.println\(demo\.toString\(\)\)\;\n        \}\n\n        redisson\.shutdown\(\)\;\n    \}\n\n    public static class Demo \{\n        private String name\;\n        private BigDecimal money\;\n\n        public Demo\(\) \{\n        \}\n\n        public Demo\(String name\, BigDecimal money\) \{\n            this\.name \= name\;\n            this\.money \= money\;\n        \}\n\n        public String getName\(\) \{\n            return this\.name\;\n        \}\n\n        public void setName\(String name\) \{\n            this\.name \= name\;\n        \}\n\n        public BigDecimal getMoney\(\) \{\n            return this\.money\;\n        \}\n\n        public void setMoney\(BigDecimal money\) \{\n            this\.money \= money\;\n        \}\n\n        public String toString\(\) \{\n            return this\.name \+ \&quot; \-\- \&quot; \+ this\.money\.toString\(\)\;\n        \}\n    \}\n\}\n</find>
+    </findStrings>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Datos3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Datos3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Datos3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Datos3" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Datos3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Datos3" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Datos3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Datos3" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="pucmm" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Demoredis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.pucmm.Demoredis" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.pucmm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Demoredis" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="520989ce-d418-431c-97a9-8b3ee0a5bc6e" name="Default" comment="" />
+      <created>1529028177731</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1529028177731</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info id="Image Layers" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info id="Capture Tool" />
+      <window_info id="Designer" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24304539" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/bin/edu/pucmm/Demoredis.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#2220#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
